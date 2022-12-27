@@ -1,0 +1,188 @@
+/*全体のスタイル（CSSリセット用）*/
+* {
+    /* padding,borderが要素の中に入る */
+    box-sizing: border-box;
+}
+
+ul {
+    /* リストの・を消す */
+    list-style: none;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+
+}
+
+a {
+    color: inherit;
+    /* 文字の下の線を消す */
+    text-decoration: none;
+}
+
+body {
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* 共通のスタイル */
+.inner {
+    width: 1100px;
+    padding: 90px 0;
+    margin: 0 auto;
+}
+
+.title {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title-b {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+
+/* header  */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    background-color: black;
+    position: absolute;
+    z-index: 10;
+}
+
+.header-logo {
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header-nav ul {
+    display: flex;
+    padding: 22px 0;
+}
+
+.header-nav ul a {
+    margin-left: 55px;
+    font-size: 18px;
+}
+
+/* footer  */
+
+footer {
+    background-color: black;
+    height: 80px;
+}
+
+.company-info {
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+/* contact */
+
+#contact {
+    background-color: white;
+    background-size: cover;
+    color: black;
+}
+
+#contact .title::before,
+#contact .title::after {
+    border-color: #fff;
+}
+
+.contact-wrap {
+    width: 600px;
+    margin: 0 auto;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    border-radius: 7px;
+    padding: 15px;
+}
+
+input,
+select {
+    height: 55px;
+}
+
+textarea {
+    height: 185px;
+}
+
+select {
+    appearance: none;
+}
+
+.contact-box:nth-of-type(3) {
+    position: relative;
+}
+
+.contact-box:nth-of-type(3)::after {
+    position: absolute;
+    background-image: URL("/img/arrow.png");
+    background-size: 100%;
+    display: block;
+    content: "";
+    width: 15px;
+    height: 15px;
+    top: 60%;
+    right: 20px;
+}
+
+.contact-caution {
+    margin: 20px 0 25px;
+    font-size: 20px;
+}
+
+.contact-box {
+    margin-bottom: 33px;
+}
+
+.contact-box:nth-of-type(4) {
+    margin-bottom: 0px;
+}
+
+.contact-text {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.red {
+    color: red;
+    margin-left: 8px;
+}
+
+.caution-red {
+    margin-left: 0;
+    margin-right: 8px;
+}
